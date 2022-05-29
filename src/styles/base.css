@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=B612:wght@400;700&display=swap');
+
+@import url('./variables.css');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: 'B612', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: var(--font-size-2);
+  background-color: var(--col-neutral-2);
+  color: var(--col-neutral-9);
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    height: auto;
+  }
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  gap: var(--spacing-1);
+}
+
+header div {
+  color: var(--col-neutral-7);
+}
+
+@media screen and (max-width: 550px) {
+  header {
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: var(--font-size-4)
+  }
+
+  header div {
+    font-size: var(--font-size-1)
+  }
+}
+
+header, main {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--spacing-3);
+}
+
+section, header {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  width: 100%;
+
+  margin: var(--spacing-1) 0;
+  border: none;
+  border-bottom: 1px solid var(--col-neutral-4);
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 1024px;
+  width: 100%;
+
+  gap: var(--spacing-2);
+
+  border-radius: var(--spacing-1);
+  padding: var(--spacing-5);
+}
+
+.input {
+  flex: auto;
+  width: 100%;
+
+  padding: var(--spacing-1) var(--spacing-2);
+  border-radius: var(--spacing-1);
+  font-size: var(--font-size-2);
+
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  outline: none;
+}
+
+.input::placeholder {
+  color: inherit;
+  opacity: 0.6;
+}
+
+.input:focus {
+  background-color: transparent;
+  color: inherit;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.icon {
+  padding: calc(var(--spacing-1) / 2);
+  font-size: var(--font-size-4);
+
+  color: var(--col-neutral-8);
+  cursor: pointer;
+  transition: background-color var(--transition-speed-fast) ease,
+  color var(--transition-speed-fast) ease;
+}
+
+.icon:hover {
+  color: var(--col-neutral-6);
+}
+
+.form-container {
+  box-shadow: var(--container-box-shadow);
+  border-radius: var(--spacing-1);
+  background-color: var(--col-neutral-1);
+  padding: var(--spacing-3);
+}
+
+/* vue transitions */
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease, height 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}

@@ -1,0 +1,46 @@
+{
+  "name": "converter-app",
+  "version": "1.0.0",
+  "description": "This is the calculator/converter application which reads \"native\" tasks and gets an accurate answer",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "lint": "eslint src --ext .ts --fix",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:clear": "jest --clearCache"
+  },
+  "keywords": [
+    "vite",
+    "vue",
+    "composition_api",
+    "converter",
+    "calculator"
+  ],
+  "author": "Sargares22",
+  "dependencies": {
+    "vue": "3.2.35"
+  },
+  "devDependencies": {
+    "vite": "2.9.9",
+    "@vitejs/plugin-vue": "2.3.3",
+    "regenerator-runtime": "0.13.9",
+    "typescript": "4.6.4",
+    "vue-tsc": "0.34.15",
+
+    "@types/jest": "27.5.1",
+
+    "eslint": "8.16.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-vue": "9.0.1",
+    "@typescript-eslint/eslint-plugin": "5.25.0",
+
+    "jest": "28.1.0",
+    "@vue/test-utils": "2.0.0",
+    "@vue/vue3-jest": "28.0.0",
+    "ts-jest": "28.0.2",
+
+    "remixicon": "2.5.0"
+  }
+}

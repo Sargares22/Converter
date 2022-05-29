@@ -1,0 +1,79 @@
+:root {
+  --col-hue: 210;
+  --col-green-hue: 100;
+  --col-red-hue: 10;
+
+  --spacing-1: 8px;
+  --spacing-2: 16px;
+  --spacing-3: 24px;
+  --spacing-4: 32px;
+  --spacing-5: 48px;
+
+  --font-size-1: 17px;
+  --font-size-2: 19px;
+  --font-size-3: 24px;
+  --font-size-4: 28px;
+
+  --col-neutral-1: hsl(var(--col-hue), 10%, 100%);
+  --col-neutral-2: hsl(var(--col-hue), 10%, 95%);
+  --col-neutral-3: hsl(var(--col-hue), 10%, 85%);
+  --col-neutral-4: hsl(var(--col-hue), 10%, 70%);
+  --col-neutral-5: hsl(var(--col-hue), 10%, 55%);
+  --col-neutral-6: hsl(var(--col-hue), 10%, 45%);
+  --col-neutral-7: hsl(var(--col-hue), 10%, 20%);
+  --col-neutral-8: hsl(var(--col-hue), 10%, 15%);
+  --col-neutral-9: hsl(var(--col-hue), 10%, 5%);
+
+  --col-blue-1: hsl(var(--col-hue), 80%, 100%);
+  --col-blue-2: hsl(var(--col-hue), 80%, 90%);
+  --col-blue-3: hsl(var(--col-hue), 80%, 80%);
+  --col-blue-4: hsl(var(--col-hue), 80%, 70%);
+  --col-blue-5: hsl(var(--col-hue), 80%, 55%);
+  --col-blue-6: hsl(var(--col-hue), 80%, 45%);
+  --col-blue-7: hsl(var(--col-hue), 80%, 25%);
+  --col-blue-8: hsl(var(--col-hue), 80%, 10%);
+  --col-blue-9: hsl(var(--col-hue), 80%, 0%);
+
+  --col-red-1: hsl(var(--col-red-hue), 70%, 100%);
+  --col-red-2: hsl(var(--col-red-hue), 70%, 90%);
+  --col-red-3: hsl(var(--col-red-hue), 70%, 80%);
+  --col-red-4: hsl(var(--col-red-hue), 70%, 70%);
+  --col-red-5: hsl(var(--col-red-hue), 70%, 55%);
+  --col-red-6: hsl(var(--col-red-hue), 70%, 45%);
+  --col-red-7: hsl(var(--col-red-hue), 70%, 25%);
+  --col-red-8: hsl(var(--col-red-hue), 70%, 10%);
+  --col-red-9: hsl(var(--col-red-hue), 70%, 0%);
+
+  --col-green-1: hsl(var(--col-green-hue), 50%, 100%);
+  --col-green-2: hsl(var(--col-green-hue), 50%, 90%);
+  --col-green-3: hsl(var(--col-green-hue), 50%, 80%);
+  --col-green-4: hsl(var(--col-green-hue), 50%, 70%);
+  --col-green-5: hsl(var(--col-green-hue), 50%, 55%);
+  --col-green-6: hsl(var(--col-green-hue), 50%, 45%);
+  --col-green-7: hsl(var(--col-green-hue), 50%, 25%);
+  --col-green-8: hsl(var(--col-green-hue), 50%, 10%);
+  --col-green-9: hsl(var(--col-green-hue), 50%, 0%);
+
+  --container-box-shadow: 0 4px 10px var(--col-neutral-3);
+
+  --transition-speed-fast: .25s;
+  --transition-speed-normal: .40s;
+  --transition-speed-slow: .60s;
+
+  --line-height: 24px;
+}
+
+@media screen and (max-width: 550px) {
+  :root {
+    --spacing-1: 8px;
+    --spacing-2: 10px;
+    --spacing-3: 12px;
+    --spacing-4: 14px;
+    --spacing-5: 16px;
+
+    --font-size-1: 15px;
+    --font-size-2: 18px;
+    --font-size-3: 20px;
+    --font-size-4: 22px;
+  }
+}
